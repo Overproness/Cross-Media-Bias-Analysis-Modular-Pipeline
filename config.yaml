@@ -366,7 +366,7 @@ processing:
     cache_dir: "cache"
 
   logging:
-    level: "DEBUG" # Options: DEBUG, INFO, WARNING, ERROR
+    level: "INFO" # Options: DEBUG, INFO, WARNING, ERROR
     log_file: "pipeline.log"
 
 # Output Configuration
