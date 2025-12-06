@@ -1,0 +1,377 @@
+# DiffOutlet Pipeline Configuration
+# Plug-and-play configuration for media bias analysis pipeline
+
+# Data Configuration
+data:
+  dataset_paths:
+    - "../Dataset/Copy of business_recorder(2020-2023).csv"
+    - "../Dataset/Copy of Copy of daily_times(full-data).csv"
+    - "../Dataset/Copy of Copy of dawn (full-data).csv"
+    - "../Dataset/Copy of Copy of pakistan_today(full-data).csv"
+
+  columns:
+    headline: "headline"
+    date: "date"
+    link: "link"
+    source: "source"
+    category: "categories"
+    article: "description"
+
+  date_format: "%m/%d/%Y" # Adjust based on your data
+  min_article_length: 100 # Minimum words in article
+
+# Component 1: Event Detection & Clustering
+event_detection:
+  enabled: true
+  method: "temporal_semantic" # Options: lda, nmf, bertopic, semantic_clustering, temporal_semantic, entity_cooccurrence, headline_similarity
+
+  # Method-specific parameters
+  lda:
+    n_topics: 20
+    max_iter: 100
+    random_state: 42
+
+  nmf:
+    n_topics: 20
+    max_iter: 200
+    random_state: 42
+
+  bertopic:
+    min_topic_size: 10
+    nr_topics: "auto"
+    calculate_probabilities: true
+
+  semantic_clustering:
+    n_clusters: 20
+    embedding_model: "all-MiniLM-L6-v2" # sentence-transformers model
+    clustering_algorithm: "kmeans" # Options: kmeans, hdbscan, agglomerative
+
+  temporal_semantic:
+    time_window_days: 4
+    semantic_weight: 0.7
+    temporal_weight: 0.3
+    n_clusters: 35
+
+  entity_cooccurrence:
+    min_entity_overlap: 2
+    entity_types: ["PERSON", "ORG", "GPE", "EVENT"]
+
+  headline_similarity:
+    method: "tfidf" # Options: tfidf, embedding
+    threshold: 0.6
+
+# Component 2: Lexical Choice Extraction
+lexical_extraction:
+  enabled: true
+  methods:
+    - "tfidf_keywords"
+    - "pos_filtered"
+    - "contextual_words"
+    - "synonym_detection"
+    - "entity_labeling"
+  # Available: tfidf_keywords, rake, yake, pos_filtered, contextual_words, synonym_detection, entity_labeling
+
+  tfidf_keywords:
+    max_features: 100
+    min_df: 2
+    max_df: 0.8
+
+  rake:
+    max_words: 4
+    min_freq: 2
+
+  yake:
+    max_ngram_size: 3
+    num_keywords: 20
+
+  pos_filtered:
+    allowed_pos: ["NOUN", "VERB", "ADJ"]
+    min_freq: 3
+
+  contextual_words:
+    window_size: 5
+    min_similarity: 0.6
+    embedding_model: "sentence-transformers/all-MiniLM-L6-v2" # Options: sentence-transformers/all-MiniLM-L6-v2, sentence-transformers/all-mpnet-base-v2, bert-base-uncased, roberta-base
+
+  synonym_detection:
+    similarity_threshold: 0.7
+    use_wordnet: true
+
+  entity_labeling:
+    compare_descriptors: true
+    min_descriptor_freq: 2
+
+# Component 3: Sentiment & Stance Analysis
+sentiment_analysis:
+  enabled: true
+  methods:
+    - "vader"
+    - "aspect_based"
+    - "transformer"
+    - "stance_detection"
+    - "emotion_classification"
+    - "subjectivity"
+    - "sentiment_trajectory"
+  # Available: vader, textblob, aspect_based, transformer, stance_detection, emotion_classification, subjectivity, sentiment_trajectory
+
+  vader:
+    compound_threshold: 0.05
+
+  textblob:
+    polarity_threshold: 0.1
+
+  aspect_based:
+    aspects: ["government", "economy", "policy", "opposition"]
+    model: "vader" # Options: vader, textblob, transformer
+
+  transformer:
+    model_name: "nlptown/bert-base-multilingual-uncased-sentiment"
+    device: "auto" # Auto-detect GPU if available
+
+  stance_detection:
+    targets: ["government", "opposition", "policy"]
+    model: "rule_based" # Options: rule_based, transformer
+
+  emotion_classification:
+    emotions: ["anger", "fear", "joy", "sadness", "surprise", "trust"]
+    model: "j-hartmann/emotion-english-distilroberta-base" # Options: nrc, transformer
+
+  subjectivity:
+    method: "textblob"
+
+  sentiment_trajectory:
+    segments: ["intro", "middle", "conclusion"]
+    segment_method: "equal_split" # Options: equal_split, paragraph_based
+
+# Component 4: Framing Analysis
+framing_analysis:
+  enabled: true
+  methods:
+    - "generic_frames"
+    - "metaphor_detection"
+    - "agency_analysis"
+    - "moral_foundations"
+    - "quote_attribution"
+  # Available: generic_frames, metaphor_detection, agency_analysis, moral_foundations, quote_attribution
+
+  generic_frames:
+    frames:
+      ["conflict", "human_interest", "economic", "morality", "responsibility"]
+    method: "lexicon_based" # Options: lexicon_based, supervised
+
+  metaphor_detection:
+    metaphor_types: ["war", "disease", "journey", "building"]
+    detection_method: "pattern_matching"
+
+  agency_analysis:
+    analyze_voice: true
+    track_subject_object: true
+
+  moral_foundations:
+    foundations: ["care_harm", "fairness", "loyalty", "authority", "sanctity"]
+    lexicon: "mfd2.0"
+
+  quote_attribution:
+    extract_quotes: true
+    analyze_source_prominence: true
+    min_quote_length: 10
+
+# Component 5: Embedding-based Comparison
+embedding_comparison:
+  enabled: true
+  methods:
+    - "contextualized_embeddings"
+    - "semantic_change"
+    - "contrastive_analysis"
+  # Available: contextualized_embeddings, word_embedding_shifts, cross_source_alignment, semantic_change, contrastive_analysis
+
+  contextualized_embeddings:
+    model_name: "roberta-base" # Options: bert-base-uncased, roberta-base, distilbert-base-uncased
+    pooling: "mean" # Options: mean, cls, max
+    max_length: 512
+
+  word_embedding_shifts:
+    embedding_type: "word2vec" # Options: word2vec, glove, fasttext
+    vector_size: 100
+    window: 5
+    min_count: 5
+
+  cross_source_alignment:
+    alignment_method: "procrustes"
+    measure_divergence: true
+
+  semantic_change:
+    time_slices: 4
+    min_word_freq: 10
+
+  contrastive_analysis:
+    method: "embedding_distance" # Options: statistical, embedding_distance
+    top_n_features: 50
+
+# Component 6: Agenda-Setting Analysis
+agenda_setting:
+  enabled: true
+  analyses:
+    - "topic_frequency"
+    - "coverage_gap"
+    - "topic_prominence"
+    - "temporal_focus"
+    - "topic_persistence"
+  # Available: topic_frequency, coverage_gap, topic_prominence, temporal_focus, topic_persistence
+
+  topic_frequency:
+    time_granularity: "week" # Options: day, week, month
+    normalize: true
+
+  coverage_gap:
+    gap_threshold: 0.3
+    compare_all_sources: true
+
+  topic_prominence:
+    features: ["headline_presence", "article_length", "early_mention"]
+    combine_method: "weighted_sum"
+
+  temporal_focus:
+    measure_lag: true
+    lag_unit: "days"
+
+  topic_persistence:
+    window_size: 14 # days
+    min_mentions: 3
+
+# Component 7: Visualization
+visualization:
+  enabled: true
+  outputs:
+    - "lexical_heatmap"
+    - "sentiment_comparison"
+    - "topic_network"
+    - "time_series"
+    - "wordcloud_contrast"
+  # Available: lexical_heatmap, sentiment_comparison, topic_network, time_series, wordcloud_contrast
+
+  lexical_heatmap:
+    top_n_terms: 50
+    colormap: "RdBu"
+
+  sentiment_comparison:
+    chart_type: "bar" # Options: bar, radar, line
+    include_aspects: true
+
+  topic_network:
+    layout: "spring" # Options: spring, circular, kamada_kawai
+    min_edge_weight: 0.3
+
+  time_series:
+    metrics: ["topic_coverage", "sentiment", "framing"]
+    rolling_window: 7
+
+  wordcloud_contrast:
+    max_words: 100
+    background_color: "white"
+
+  output_dir: "visualizations"
+  save_format: "png" # Options: png, svg, pdf
+  dpi: 300
+
+# Component 8: Comparative Metrics
+comparative_metrics:
+  enabled: true
+  metrics:
+    - "bias_score"
+    - "lexical_diversity"
+    - "framing_divergence"
+    - "objectivity_score"
+    - "political_lean"
+  # Available: bias_score, framing_divergence, lexical_diversity, objectivity_score, political_lean
+
+  bias_score:
+    components: ["sentiment", "framing", "lexical", "political_lean"]
+    weights: [0.3, 0.3, 0.2, 0.2]
+    normalization: "minmax"
+
+  framing_divergence:
+    method: "jensen_shannon" # Options: jensen_shannon, kl_divergence, hellinger
+    baseline: "average" # Options: average, specific_source
+
+  lexical_diversity:
+    measures: ["ttr", "mtld", "vocd"] # Type-token ratio, MTLD, vocd
+
+  objectivity_score:
+    fact_opinion_ratio: true
+    hedge_words: true
+    subjectivity_weight: 0.6
+
+  political_lean:
+    method: "unsupervised" # Options: unsupervised, supervised
+    dimensions: 2
+
+# Machine Learning Models (for classification/prediction tasks)
+ml_models:
+  enabled: false # Set to true if you want to train predictive models
+  task: "bias_prediction" # Options: source_classification, bias_prediction, frame_detection
+
+  models:
+    - "xgboost"
+    - "neural_network"
+  # Available: random_forest, logistic_regression, svm, xgboost, neural_network
+
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+
+  logistic_regression:
+    C: 1.0
+    max_iter: 1000
+    random_state: 42
+
+  svm:
+    kernel: "rbf"
+    C: 1.0
+    random_state: 42
+
+  xgboost:
+    n_estimators: 100
+    learning_rate: 0.1
+    max_depth: 6
+    random_state: 42
+
+  neural_network:
+    hidden_layers: [128, 64]
+    activation: "relu"
+    epochs: 50
+    batch_size: 32
+
+  feature_set: "combined" # Options: lexical, sentiment, framing, embedding, combined
+  test_size: 0.2
+  cross_validation: 10
+
+# Processing Options
+processing:
+  text_cleaning:
+    remove_urls: true
+    remove_html: true
+    remove_special_chars: true
+    lowercase: true
+    remove_stopwords: true
+    lemmatize: true
+
+  parallelization:
+    enabled: true
+    n_jobs: -1 # -1 for all cores
+
+  caching:
+    enabled: true
+    cache_dir: "cache"
+
+  logging:
+    level: "DEBUG" # Options: DEBUG, INFO, WARNING, ERROR
+    log_file: "pipeline.log"
+
+# Output Configuration
+output:
+  results_dir: "results"
+  save_intermediate: true
+  export_formats: ["csv", "json"] # Options: csv, json, pickle
+  timestamp_outputs: true

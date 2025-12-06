@@ -1,0 +1,12 @@
+.vscode/
+cache/
+results/
+*.ps1
+debug_wordcloud.py
+test_full_wordcloud.py
+test_viz.py
+setup.py
+check_gpu.py
+*.log
+quick_start.py
+__pycache__/
