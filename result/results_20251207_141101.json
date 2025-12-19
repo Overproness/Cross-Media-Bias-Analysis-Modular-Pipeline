@@ -1,0 +1,2048 @@
+{
+  "dataset_stats": {
+    "total_articles": 294407,
+    "sources": 4,
+    "source_distribution": {
+      "Business Recorder": 216960,
+      "Dawn": 39398,
+      "Daily Times": 21318,
+      "Pakistan Today": 16731
+    },
+    "date_range": {
+      "start": "2020-01-01 00:00:00",
+      "end": "2023-07-15 00:00:00"
+    },
+    "avg_article_length": 393.72410642409994,
+    "categories": {
+      "Pakistan ": 72683,
+      "Markets ": 58823,
+      "World ": 47215,
+      "Business & Finance ": 25325,
+      "Print ": 14710,
+      "Business": 13073,
+      "Sports ": 10959,
+      "Pakistan": 5470,
+      "Opinion ": 5230,
+      "Business ": 5194
+    }
+  },
+  "event_detection": {
+    "n_clusters": 20,
+    "method": "nmf"
+  },
+  "lexical_extraction": {
+    "SynonymDetector": {
+      "Business Recorder": {
+        "synonym_groups": {
+          "00": [
+            [
+              "000",
+              0.7111262679100037
+            ]
+          ],
+          "000": [
+            [
+              "million",
+              0.7978447675704956
+            ],
+            [
+              "00",
+              0.7111262679100037
+            ]
+          ],
+          "10": [
+            [
+              "11",
+              0.7633585929870605
+            ]
+          ],
+          "11": [
+            [
+              "12",
+              0.8357701897621155
+            ],
+            [
+              "10",
+              0.7633585929870605
+            ]
+          ],
+          "12": [
+            [
+              "11",
+              0.8357701897621155
+            ],
+            [
+              "15",
+              0.7611943483352661
+            ],
+            [
+              "20",
+              0.716574490070343
+            ]
+          ],
+          "15": [
+            [
+              "19",
+              0.7745199203491211
+            ],
+            [
+              "12",
+              0.7611943483352661
+            ],
+            [
+              "25",
+              0.7379730343818665
+            ],
+            [
+              "30",
+              0.7203961610794067
+            ],
+            [
+              "20",
+              0.7183531522750854
+            ]
+          ],
+          "19": [
+            [
+              "20",
+              0.8037881851196289
+            ],
+            [
+              "25",
+              0.798683762550354
+            ],
+            [
+              "22",
+              0.777320146560669
+            ],
+            [
+              "15",
+              0.7745199203491211
+            ],
+            [
+              "30",
+              0.7080852389335632
+            ]
+          ],
+          "20": [
+            [
+              "19",
+              0.8037881851196289
+            ],
+            [
+              "22",
+              0.7603270411491394
+            ],
+            [
+              "25",
+              0.7518839836120605
+            ],
+            [
+              "15",
+              0.7183531522750854
+            ],
+            [
+              "12",
+              0.716574490070343
+            ]
+          ],
+          "2020": [
+            [
+              "2021",
+              0.8513310551643372
+            ],
+            [
+              "2022",
+              0.7330329418182373
+            ]
+          ],
+          "2021": [
+            [
+              "2020",
+              0.8513310551643372
+            ],
+            [
+              "2022",
+              0.7756566405296326
+            ]
+          ],
+          "2022": [
+            [
+              "2021",
+              0.7756566405296326
+            ],
+            [
+              "2020",
+              0.7330329418182373
+            ]
+          ],
+          "22": [
+            [
+              "19",
+              0.777320146560669
+            ],
+            [
+              "20",
+              0.7603270411491394
+            ],
+            [
+              "25",
+              0.728547990322113
+            ]
+          ],
+          "25": [
+            [
+              "19",
+              0.798683762550354
+            ],
+            [
+              "30",
+              0.7841145992279053
+            ],
+            [
+              "20",
+              0.7518839836120605
+            ],
+            [
+              "15",
+              0.7379730343818665
+            ],
+            [
+              "22",
+              0.728547990322113
+            ]
+          ],
+          "30": [
+            [
+              "25",
+              0.7841145992279053
+            ],
+            [
+              "15",
+              0.7203961610794067
+            ],
+            [
+              "19",
+              0.7080852389335632
+            ],
+            [
+              "20",
+              0.7067645788192749
+            ]
+          ],
+          "billion": [
+            [
+              "million",
+              0.7695300579071045
+            ]
+          ],
+          "business": [
+            [
+              "company",
+              0.7073819637298584
+            ]
+          ],
+          "china": [
+            [
+              "russia",
+              0.7461695671081543
+            ],
+            [
+              "countries",
+              0.71937495470047
+            ],
+            [
+              "india",
+              0.7024573087692261
+            ],
+            [
+              "country",
+              0.7001760005950928
+            ]
+          ],
+          "company": [
+            [
+              "business",
+              0.7073819637298584
+            ]
+          ],
+          "countries": [
+            [
+              "country",
+              0.8455124497413635
+            ],
+            [
+              "russia",
+              0.7307937145233154
+            ],
+            [
+              "china",
+              0.71937495470047
+            ]
+          ],
+          "country": [
+            [
+              "countries",
+              0.8455124497413635
+            ],
+            [
+              "india",
+              0.7110543251037598
+            ],
+            [
+              "china",
+              0.7001760005950928
+            ]
+          ],
+          "economic": [
+            [
+              "economy",
+              0.8874979615211487
+            ]
+          ],
+          "economy": [
+            [
+              "economic",
+              0.8874979615211487
+            ]
+          ],
+          "friday": [
+            [
+              "thursday",
+              0.8306545615196228
+            ],
+            [
+              "wednesday",
+              0.7394759058952332
+            ],
+            [
+              "monday",
+              0.7143928408622742
+            ],
+            [
+              "tuesday",
+              0.7087754607200623
+            ]
+          ],
+          "high": [
+            [
+              "higher",
+              0.7301576733589172
+            ]
+          ],
+          "higher": [
+            [
+              "high",
+              0.7301576733589172
+            ]
+          ],
+          "india": [
+            [
+              "pakistan",
+              0.7388447523117065
+            ],
+            [
+              "country",
+              0.7110543251037598
+            ],
+            [
+              "china",
+              0.7024573087692261
+            ]
+          ],
+          "islamabad": [
+            [
+              "karachi",
+              0.8269673585891724
+            ],
+            [
+              "pakistan",
+              0.7594430446624756
+            ]
+          ],
+          "karachi": [
+            [
+              "islamabad",
+              0.8269673585891724
+            ],
+            [
+              "pakistan",
+              0.7356142401695251
+            ]
+          ],
+          "million": [
+            [
+              "000",
+              0.7978447675704956
+            ],
+            [
+              "billion",
+              0.7695300579071045
+            ]
+          ],
+          "monday": [
+            [
+              "tuesday",
+              0.8742198348045349
+            ],
+            [
+              "wednesday",
+              0.781313419342041
+            ],
+            [
+              "thursday",
+              0.7425211668014526
+            ],
+            [
+              "week",
+              0.7175626754760742
+            ],
+            [
+              "friday",
+              0.7143928408622742
+            ]
+          ],
+          "month": [
+            [
+              "months",
+              0.9104163646697998
+            ]
+          ],
+          "months": [
+            [
+              "month",
+              0.9104163646697998
+            ],
+            [
+              "years",
+              0.7397302389144897
+            ]
+          ],
+          "pakistan": [
+            [
+              "islamabad",
+              0.7594430446624756
+            ],
+            [
+              "india",
+              0.7388447523117065
+            ],
+            [
+              "karachi",
+              0.7356142401695251
+            ]
+          ],
+          "price": [
+            [
+              "prices",
+              0.8931871056556702
+            ]
+          ],
+          "prices": [
+            [
+              "price",
+              0.8931871056556702
+            ]
+          ],
+          "russia": [
+            [
+              "china",
+              0.7461695671081543
+            ],
+            [
+              "countries",
+              0.7307937145233154
+            ]
+          ],
+          "thursday": [
+            [
+              "friday",
+              0.8306545615196228
+            ],
+            [
+              "wednesday",
+              0.8174118399620056
+            ],
+            [
+              "tuesday",
+              0.7930673360824585
+            ],
+            [
+              "monday",
+              0.7425211668014526
+            ]
+          ],
+          "trade": [
+            [
+              "traded",
+              0.7973654270172119
+            ]
+          ],
+          "traded": [
+            [
+              "trade",
+              0.7973654270172119
+            ]
+          ],
+          "tuesday": [
+            [
+              "monday",
+              0.8742198348045349
+            ],
+            [
+              "wednesday",
+              0.8553862571716309
+            ],
+            [
+              "thursday",
+              0.7930673360824585
+            ],
+            [
+              "friday",
+              0.7087754607200623
+            ]
+          ],
+          "wednesday": [
+            [
+              "tuesday",
+              0.8553862571716309
+            ],
+            [
+              "thursday",
+              0.8174118399620056
+            ],
+            [
+              "monday",
+              0.781313419342041
+            ],
+            [
+              "friday",
+              0.7394759058952332
+            ]
+          ],
+          "week": [
+            [
+              "monday",
+              0.7175626754760742
+            ]
+          ],
+          "year": [
+            [
+              "years",
+              0.8122314810752869
+            ]
+          ],
+          "years": [
+            [
+              "year",
+              0.8122314810752869
+            ],
+            [
+              "months",
+              0.7397302389144897
+            ]
+          ]
+        },
+        "total_terms": 100
+      },
+      "Dawn": {
+        "synonym_groups": {
+          "000": [
+            [
+              "million",
+              0.7978447675704956
+            ]
+          ],
+          "2020": [
+            [
+              "2022",
+              0.7330329418182373
+            ]
+          ],
+          "2022": [
+            [
+              "2020",
+              0.7330329418182373
+            ]
+          ],
+          "added": [
+            [
+              "adding",
+              0.8256821036338806
+            ]
+          ],
+          "adding": [
+            [
+              "added",
+              0.8256821036338806
+            ]
+          ],
+          "case": [
+            [
+              "cases",
+              0.8939300179481506
+            ]
+          ],
+          "cases": [
+            [
+              "case",
+              0.8939300179481506
+            ]
+          ],
+          "countries": [
+            [
+              "country",
+              0.8455124497413635
+            ]
+          ],
+          "country": [
+            [
+              "countries",
+              0.8455124497413635
+            ],
+            [
+              "india",
+              0.7110543251037598
+            ]
+          ],
+          "day": [
+            [
+              "days",
+              0.7591357827186584
+            ]
+          ],
+          "days": [
+            [
+              "day",
+              0.7591357827186584
+            ]
+          ],
+          "india": [
+            [
+              "pakistan",
+              0.7388447523117065
+            ],
+            [
+              "country",
+              0.7110543251037598
+            ]
+          ],
+          "islamabad": [
+            [
+              "karachi",
+              0.8269673585891724
+            ],
+            [
+              "lahore",
+              0.8000873923301697
+            ],
+            [
+              "pakistan",
+              0.7594430446624756
+            ],
+            [
+              "punjab",
+              0.7021892666816711
+            ]
+          ],
+          "karachi": [
+            [
+              "lahore",
+              0.8315923810005188
+            ],
+            [
+              "islamabad",
+              0.8269673585891724
+            ],
+            [
+              "sindh",
+              0.7398927807807922
+            ],
+            [
+              "pakistan",
+              0.7356142401695251
+            ]
+          ],
+          "lahore": [
+            [
+              "karachi",
+              0.8315923810005188
+            ],
+            [
+              "islamabad",
+              0.8000873923301697
+            ],
+            [
+              "punjab",
+              0.7699010968208313
+            ],
+            [
+              "pakistan",
+              0.7176231741905212
+            ]
+          ],
+          "million": [
+            [
+              "000",
+              0.7978447675704956
+            ]
+          ],
+          "month": [
+            [
+              "months",
+              0.9104163646697998
+            ]
+          ],
+          "months": [
+            [
+              "month",
+              0.9104163646697998
+            ],
+            [
+              "years",
+              0.7397302389144897
+            ]
+          ],
+          "pakistan": [
+            [
+              "punjab",
+              0.7916274666786194
+            ],
+            [
+              "islamabad",
+              0.7594430446624756
+            ],
+            [
+              "india",
+              0.7388447523117065
+            ],
+            [
+              "karachi",
+              0.7356142401695251
+            ],
+            [
+              "lahore",
+              0.7176231741905212
+            ]
+          ],
+          "punjab": [
+            [
+              "pakistan",
+              0.7916274666786194
+            ],
+            [
+              "lahore",
+              0.7699010968208313
+            ],
+            [
+              "islamabad",
+              0.7021892666816711
+            ]
+          ],
+          "sindh": [
+            [
+              "karachi",
+              0.7398927807807922
+            ]
+          ],
+          "year": [
+            [
+              "years",
+              0.8122314810752869
+            ]
+          ],
+          "years": [
+            [
+              "year",
+              0.8122314810752869
+            ],
+            [
+              "months",
+              0.7397302389144897
+            ]
+          ]
+        },
+        "total_terms": 100
+      },
+      "Pakistan Today": {
+        "synonym_groups": {
+          "000": [
+            [
+              "million",
+              0.7978448867797852
+            ]
+          ],
+          "2020": [
+            [
+              "2021",
+              0.8513310551643372
+            ]
+          ],
+          "2021": [
+            [
+              "2020",
+              0.8513310551643372
+            ]
+          ],
+          "billion": [
+            [
+              "million",
+              0.7695300579071045
+            ]
+          ],
+          "business": [
+            [
+              "company",
+              0.7073819041252136
+            ]
+          ],
+          "china": [
+            [
+              "countries",
+              0.7193751335144043
+            ],
+            [
+              "country",
+              0.7001763582229614
+            ]
+          ],
+          "companies": [
+            [
+              "company",
+              0.8849972486495972
+            ],
+            [
+              "industry",
+              0.7640029191970825
+            ]
+          ],
+          "company": [
+            [
+              "companies",
+              0.8849972486495972
+            ],
+            [
+              "industry",
+              0.7079751491546631
+            ],
+            [
+              "business",
+              0.7073819041252136
+            ]
+          ],
+          "countries": [
+            [
+              "country",
+              0.8455125093460083
+            ],
+            [
+              "china",
+              0.7193751335144043
+            ]
+          ],
+          "country": [
+            [
+              "countries",
+              0.8455125093460083
+            ],
+            [
+              "china",
+              0.7001763582229614
+            ]
+          ],
+          "economic": [
+            [
+              "economy",
+              0.887498140335083
+            ]
+          ],
+          "economy": [
+            [
+              "economic",
+              0.887498140335083
+            ]
+          ],
+          "finance": [
+            [
+              "financial",
+              0.8942753076553345
+            ]
+          ],
+          "financial": [
+            [
+              "finance",
+              0.8942753076553345
+            ]
+          ],
+          "increase": [
+            [
+              "increased",
+              0.8869699239730835
+            ]
+          ],
+          "increased": [
+            [
+              "increase",
+              0.8869699239730835
+            ]
+          ],
+          "industry": [
+            [
+              "companies",
+              0.7640029191970825
+            ],
+            [
+              "company",
+              0.7079751491546631
+            ]
+          ],
+          "islamabad": [
+            [
+              "karachi",
+              0.8269675374031067
+            ],
+            [
+              "lahore",
+              0.8000877499580383
+            ],
+            [
+              "pakistan",
+              0.7594430446624756
+            ],
+            [
+              "punjab",
+              0.7021893858909607
+            ]
+          ],
+          "karachi": [
+            [
+              "lahore",
+              0.8315922617912292
+            ],
+            [
+              "islamabad",
+              0.8269675374031067
+            ],
+            [
+              "pakistan",
+              0.735614001750946
+            ]
+          ],
+          "lahore": [
+            [
+              "karachi",
+              0.8315922617912292
+            ],
+            [
+              "islamabad",
+              0.8000877499580383
+            ],
+            [
+              "punjab",
+              0.7699009776115417
+            ],
+            [
+              "pakistan",
+              0.7176231741905212
+            ]
+          ],
+          "million": [
+            [
+              "000",
+              0.7978448867797852
+            ],
+            [
+              "billion",
+              0.7695300579071045
+            ]
+          ],
+          "minister": [
+            [
+              "ministry",
+              0.8132025003433228
+            ]
+          ],
+          "ministry": [
+            [
+              "minister",
+              0.8132025003433228
+            ]
+          ],
+          "month": [
+            [
+              "months",
+              0.9104165434837341
+            ]
+          ],
+          "months": [
+            [
+              "month",
+              0.9104165434837341
+            ],
+            [
+              "years",
+              0.7397305369377136
+            ]
+          ],
+          "pakistan": [
+            [
+              "punjab",
+              0.7916274666786194
+            ],
+            [
+              "islamabad",
+              0.7594430446624756
+            ],
+            [
+              "karachi",
+              0.735614001750946
+            ],
+            [
+              "lahore",
+              0.7176231741905212
+            ]
+          ],
+          "price": [
+            [
+              "prices",
+              0.8931871056556702
+            ]
+          ],
+          "prices": [
+            [
+              "price",
+              0.8931871056556702
+            ]
+          ],
+          "punjab": [
+            [
+              "pakistan",
+              0.7916274666786194
+            ],
+            [
+              "lahore",
+              0.7699009776115417
+            ],
+            [
+              "islamabad",
+              0.7021893858909607
+            ]
+          ],
+          "year": [
+            [
+              "years",
+              0.8122314810752869
+            ]
+          ],
+          "years": [
+            [
+              "year",
+              0.8122314810752869
+            ],
+            [
+              "months",
+              0.7397305369377136
+            ]
+          ]
+        },
+        "total_terms": 100
+      },
+      "Daily Times": {
+        "synonym_groups": {
+          "000": [
+            [
+              "million",
+              0.7978450059890747
+            ]
+          ],
+          "billion": [
+            [
+              "million",
+              0.7695300579071045
+            ]
+          ],
+          "case": [
+            [
+              "cases",
+              0.8939298391342163
+            ]
+          ],
+          "cases": [
+            [
+              "case",
+              0.8939298391342163
+            ]
+          ],
+          "china": [
+            [
+              "countries",
+              0.71937495470047
+            ],
+            [
+              "india",
+              0.7024573087692261
+            ],
+            [
+              "country",
+              0.7001760005950928
+            ]
+          ],
+          "countries": [
+            [
+              "country",
+              0.8455124497413635
+            ],
+            [
+              "china",
+              0.71937495470047
+            ]
+          ],
+          "country": [
+            [
+              "countries",
+              0.8455124497413635
+            ],
+            [
+              "india",
+              0.7110543251037598
+            ],
+            [
+              "china",
+              0.7001760005950928
+            ]
+          ],
+          "day": [
+            [
+              "days",
+              0.7591354846954346
+            ]
+          ],
+          "days": [
+            [
+              "day",
+              0.7591354846954346
+            ]
+          ],
+          "economic": [
+            [
+              "economy",
+              0.8874979615211487
+            ]
+          ],
+          "economy": [
+            [
+              "economic",
+              0.8874979615211487
+            ]
+          ],
+          "india": [
+            [
+              "pakistan",
+              0.7388447523117065
+            ],
+            [
+              "indian",
+              0.7322009205818176
+            ],
+            [
+              "country",
+              0.7110543251037598
+            ],
+            [
+              "china",
+              0.7024573087692261
+            ]
+          ],
+          "indian": [
+            [
+              "india",
+              0.7322009205818176
+            ]
+          ],
+          "million": [
+            [
+              "000",
+              0.7978450059890747
+            ],
+            [
+              "billion",
+              0.7695300579071045
+            ]
+          ],
+          "pakistan": [
+            [
+              "punjab",
+              0.7916274666786194
+            ],
+            [
+              "india",
+              0.7388447523117065
+            ]
+          ],
+          "punjab": [
+            [
+              "pakistan",
+              0.7916274666786194
+            ]
+          ],
+          "state": [
+            [
+              "states",
+              0.9195885062217712
+            ]
+          ],
+          "states": [
+            [
+              "state",
+              0.9195885062217712
+            ]
+          ],
+          "year": [
+            [
+              "years",
+              0.8122316598892212
+            ]
+          ],
+          "years": [
+            [
+              "year",
+              0.8122316598892212
+            ]
+          ]
+        },
+        "total_terms": 100
+      }
+    }
+  },
+  "sentiment_aggregated": {
+    "('sentiment_compound', 'mean')": [
+      0.25864837481563424,
+      0.2694619570316165,
+      0.09425982283364637,
+      0.38974826370210985
+    ],
+    "('sentiment_compound', 'std')": [
+      0.792284638469229,
+      0.8328989900696295,
+      0.8756196699021767,
+      0.7677446684987096
+    ],
+    "('sentiment_positive', 'mean')": [
+      0.07842633204277287,
+      0.09082357632048034,
+      0.07469171023909843,
+      0.08321206144283068
+    ],
+    "('sentiment_positive', 'std')": [
+      0.04272638873556931,
+      0.04842542599255544,
+      0.039394358913307836,
+      0.04269633921435514
+    ],
+    "('sentiment_negative', 'mean')": [
+      0.056659858960176994,
+      0.0620399193170091,
+      0.06778859332961064,
+      0.04844605821528899
+    ],
+    "('sentiment_negative', 'std')": [
+      0.0440103769213114,
+      0.046556213611922276,
+      0.04591274447174611,
+      0.044024726837025026
+    ],
+    "('sentiment_neutral', 'mean')": [
+      0.864913970317109,
+      0.8471405854207712,
+      0.8575187065333265,
+      0.8683434941127248
+    ],
+    "('sentiment_neutral', 'std')": [
+      0.05571185742413045,
+      0.05726645122143693,
+      0.05190040459073624,
+      0.05462069880143778
+    ],
+    "('sentiment_label', '<lambda>')": [
+      {
+        "positive": 137496,
+        "negative": 74813,
+        "neutral": 4651
+      },
+      {
+        "positive": 13637,
+        "negative": 7437,
+        "neutral": 244
+      },
+      {
+        "positive": 21595,
+        "negative": 17503,
+        "neutral": 300
+      },
+      {
+        "positive": 11841,
+        "negative": 4687,
+        "neutral": 203
+      }
+    ]
+  },
+  "framing_comparison": {
+    "metaphor_war_count": [
+      0.3972667772861357,
+      0.5920818088000751,
+      0.6642976800852836,
+      0.31157731157731156
+    ],
+    "metaphor_disease_count": [
+      0.5275442477876107,
+      1.1191950464396285,
+      0.6426975988628865,
+      0.37045006275775505
+    ],
+    "metaphor_journey_count": [
+      0.38494653392330386,
+      0.4378928604934797,
+      0.5069039037514594,
+      0.43595720518797443
+    ],
+    "metaphor_building_count": [
+      0.3145003687315634,
+      0.3143353034993902,
+      0.37710036042438705,
+      0.4378100531946686
+    ]
+  },
+  "embedding_comparison": {
+    "SemanticDivergenceComparator": {
+      "sources": [
+        "Business Recorder",
+        "Dawn",
+        "Pakistan Today",
+        "Daily Times"
+      ],
+      "divergence_matrix": [
+        [
+          0.0,
+          0.7840002775192261,
+          0.7229056358337402,
+          0.8443056344985962
+        ],
+        [
+          0.7840002775192261,
+          0.0,
+          0.8067739605903625,
+          0.8266277313232422
+        ],
+        [
+          0.7229056358337402,
+          0.8067739605903625,
+          0.0,
+          0.8670196533203125
+        ],
+        [
+          0.8443056344985962,
+          0.8266278505325317,
+          0.8670196533203125,
+          0.0
+        ]
+      ]
+    }
+  },
+  "agenda_setting": {
+    "TopicProminenceAnalyzer": {
+      "prominence_by_source": {
+        "Business Recorder": {
+          "15": {
+            "individual_scores": {
+              "headline_presence": 0.09611449115044247,
+              "avg_article_length": 416.107706325229,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 139.0679402721265
+          },
+          "18": {
+            "individual_scores": {
+              "headline_presence": 0.06359236725663717,
+              "avg_article_length": 354.80937885047473,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 118.62432373924379
+          },
+          "0": {
+            "individual_scores": {
+              "headline_presence": 0.031803097345132744,
+              "avg_article_length": 567.1491304347826,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 189.39364451070924
+          },
+          "19": {
+            "individual_scores": {
+              "headline_presence": 0.055277470501474926,
+              "avg_article_length": 309.8443258567498,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 103.63320110908376
+          },
+          "8": {
+            "individual_scores": {
+              "headline_presence": 0.04231194690265487,
+              "avg_article_length": 384.34215686274507,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 128.4614896032159
+          },
+          "9": {
+            "individual_scores": {
+              "headline_presence": 0.03697455752212389,
+              "avg_article_length": 418.6234106207928,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 139.8867950594383
+          },
+          "11": {
+            "individual_scores": {
+              "headline_presence": 0.026101585545722714,
+              "avg_article_length": 393.25322267349463,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 131.42644141968012
+          },
+          "10": {
+            "individual_scores": {
+              "headline_presence": 0.044178650442477874,
+              "avg_article_length": 458.9819509650496,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 153.342043205164
+          },
+          "13": {
+            "individual_scores": {
+              "headline_presence": 0.04291113569321534,
+              "avg_article_length": 368.31987110633725,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 123.12092741401015
+          },
+          "3": {
+            "individual_scores": {
+              "headline_presence": 0.05586744100294985,
+              "avg_article_length": 362.0994142397492,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 121.05176056025071
+          },
+          "12": {
+            "individual_scores": {
+              "headline_presence": 0.01755623156342183,
+              "avg_article_length": 570.0391178787083,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 190.3522247034239
+          },
+          "1": {
+            "individual_scores": {
+              "headline_presence": 0.07081950589970501,
+              "avg_article_length": 348.3168890335177,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 116.46256951313914
+          },
+          "14": {
+            "individual_scores": {
+              "headline_presence": 0.015952249262536872,
+              "avg_article_length": 200.25975151690264,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 67.0919012553884
+          },
+          "2": {
+            "individual_scores": {
+              "headline_presence": 0.08815449852507375,
+              "avg_article_length": 359.2493987242497,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 120.11251774092493
+          },
+          "16": {
+            "individual_scores": {
+              "headline_presence": 0.05499170353982301,
+              "avg_article_length": 335.5777386639846,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 112.21091012250814
+          },
+          "17": {
+            "individual_scores": {
+              "headline_presence": 0.05035490412979351,
+              "avg_article_length": 357.08402745995426,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 119.37812745469468
+          },
+          "7": {
+            "individual_scores": {
+              "headline_presence": 0.04335822271386431,
+              "avg_article_length": 301.11608376740725,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 100.71981399670705
+          },
+          "6": {
+            "individual_scores": {
+              "headline_presence": 0.06921552359882006,
+              "avg_article_length": 300.346607178531,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 100.47194090070992
+          },
+          "4": {
+            "individual_scores": {
+              "headline_presence": 0.024801806784660766,
+              "avg_article_length": 368.0449730533358,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 123.02325828670682
+          },
+          "5": {
+            "individual_scores": {
+              "headline_presence": 0.06966261061946903,
+              "avg_article_length": 318.5474394601032,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 106.53903402357422
+          }
+        },
+        "Dawn": {
+          "0": {
+            "individual_scores": {
+              "headline_presence": 0.058226305903852985,
+              "avg_article_length": 784.2802964254577,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 261.7795075771205
+          },
+          "17": {
+            "individual_scores": {
+              "headline_presence": 0.09863444844915986,
+              "avg_article_length": 490.1466803911477,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 163.7484382798656
+          },
+          "15": {
+            "individual_scores": {
+              "headline_presence": 0.06114523579877151,
+              "avg_article_length": 523.447903694479,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 174.83634964342593
+          },
+          "3": {
+            "individual_scores": {
+              "headline_presence": 0.10541144220518808,
+              "avg_article_length": 581.7175535757284,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 194.27432167264453
+          },
+          "19": {
+            "individual_scores": {
+              "headline_presence": 0.17437433372252398,
+              "avg_article_length": 437.06259097525475,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 146.07898843632577
+          },
+          "8": {
+            "individual_scores": {
+              "headline_presence": 0.10155337834407838,
+              "avg_article_length": 545.7208197950513,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 182.27412439113178
+          },
+          "1": {
+            "individual_scores": {
+              "headline_presence": 0.008122239707599371,
+              "avg_article_length": 437.140625,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 146.04958241323587
+          },
+          "18": {
+            "individual_scores": {
+              "headline_presence": 0.06053606782070156,
+              "avg_article_length": 481.22054507337526,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 160.76036038039865
+          },
+          "7": {
+            "individual_scores": {
+              "headline_presence": 0.007106959744149449,
+              "avg_article_length": 405.325,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 135.44403565324805
+          },
+          "2": {
+            "individual_scores": {
+              "headline_presence": 0.0743438753236205,
+              "avg_article_length": 487.867872994196,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 162.98073895650654
+          },
+          "9": {
+            "individual_scores": {
+              "headline_presence": 0.005507893801715823,
+              "avg_article_length": 491.1981566820277,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 164.06788819194313
+          },
+          "5": {
+            "individual_scores": {
+              "headline_presence": 0.07396314533732677,
+              "avg_article_length": 529.7415923129719,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 176.93851848610305
+          },
+          "11": {
+            "individual_scores": {
+              "headline_presence": 0.07518148129346668,
+              "avg_article_length": 554.1130992572586,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 185.062760246184
+          },
+          "16": {
+            "individual_scores": {
+              "headline_presence": 0.019366465302807247,
+              "avg_article_length": 487.4416775884666,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 162.82034801792312
+          },
+          "13": {
+            "individual_scores": {
+              "headline_presence": 0.037895324635768314,
+              "avg_article_length": 508.2605492297388,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 169.76614818479152
+          },
+          "6": {
+            "individual_scores": {
+              "headline_presence": 0.01654906340423372,
+              "avg_article_length": 505.23006134969324,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 168.74887013769916
+          },
+          "4": {
+            "individual_scores": {
+              "headline_presence": 0.015000761459972587,
+              "avg_article_length": 505.1218274111675,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 168.71227605754248
+          },
+          "14": {
+            "individual_scores": {
+              "headline_presence": 0.0002284379917762323,
+              "avg_article_length": 423.6666666666667,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 141.5556317015528
+          },
+          "10": {
+            "individual_scores": {
+              "headline_presence": 0.001472155947002386,
+              "avg_article_length": 494.9310344827586,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 165.3108355462352
+          },
+          "12": {
+            "individual_scores": {
+              "headline_presence": 0.005380983806284583,
+              "avg_article_length": 311.85377358490564,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 104.2863848562373
+          }
+        },
+        "Pakistan Today": {
+          "18": {
+            "individual_scores": {
+              "headline_presence": 0.02785248939095093,
+              "avg_article_length": 471.2832618025751,
+              "early_mention_rate": 0.9506437768240343
+            },
+            "combined_prominence": 157.42058602293005
+          },
+          "15": {
+            "individual_scores": {
+              "headline_presence": 0.2319646165800012,
+              "avg_article_length": 389.2867817572791,
+              "early_mention_rate": 0.791033238855965
+            },
+            "combined_prominence": 130.10325987090502
+          },
+          "8": {
+            "individual_scores": {
+              "headline_presence": 0.07094614786922479,
+              "avg_article_length": 427.79528222409436,
+              "early_mention_rate": 0.9561920808761584
+            },
+            "combined_prominence": 142.94080681761326
+          },
+          "16": {
+            "individual_scores": {
+              "headline_presence": 0.04847289462674078,
+              "avg_article_length": 466.38471023427866,
+              "early_mention_rate": 0.9297163995067818
+            },
+            "combined_prominence": 155.7876331761374
+          },
+          "2": {
+            "individual_scores": {
+              "headline_presence": 0.20357420357420358,
+              "avg_article_length": 354.4856136230182,
+              "early_mention_rate": 0.857017028772754
+            },
+            "combined_prominence": 118.51540161845504
+          },
+          "19": {
+            "individual_scores": {
+              "headline_presence": 0.06024744486282948,
+              "avg_article_length": 368.8799603174603,
+              "early_mention_rate": 0.9712301587301587
+            },
+            "combined_prominence": 123.30381264035111
+          },
+          "9": {
+            "individual_scores": {
+              "headline_presence": 0.03179726256649334,
+              "avg_article_length": 405.906015037594,
+              "early_mention_rate": 0.7199248120300752
+            },
+            "combined_prominence": 135.55257903739684
+          },
+          "3": {
+            "individual_scores": {
+              "headline_presence": 0.06652322036937422,
+              "avg_article_length": 398.94609164420484,
+              "early_mention_rate": 0.9344115004492363
+            },
+            "combined_prominence": 133.31567545500783
+          },
+          "7": {
+            "individual_scores": {
+              "headline_presence": 0.02510310202617895,
+              "avg_article_length": 382.43333333333334,
+              "early_mention_rate": 0.85
+            },
+            "combined_prominence": 127.7694788117865
+          },
+          "6": {
+            "individual_scores": {
+              "headline_presence": 0.03616042077580539,
+              "avg_article_length": 380.56528925619835,
+              "early_mention_rate": 0.8198347107438017
+            },
+            "combined_prominence": 127.14042812923931
+          },
+          "0": {
+            "individual_scores": {
+              "headline_presence": 0.039925886079732235,
+              "avg_article_length": 589.9745508982036,
+              "early_mention_rate": 0.8997005988023952
+            },
+            "combined_prominence": 196.97139246102856
+          },
+          "17": {
+            "individual_scores": {
+              "headline_presence": 0.015599784830554062,
+              "avg_article_length": 411.66283524904213,
+              "early_mention_rate": 0.9846743295019157
+            },
+            "combined_prominence": 137.55436978779153
+          },
+          "12": {
+            "individual_scores": {
+              "headline_presence": 0.0026896180742334587,
+              "avg_article_length": 378.8888888888889,
+              "early_mention_rate": 0.8888888888888888
+            },
+            "combined_prominence": 126.59348913195068
+          },
+          "11": {
+            "individual_scores": {
+              "headline_presence": 0.018946865100711256,
+              "avg_article_length": 426.09148264984225,
+              "early_mention_rate": 0.9652996845425867
+            },
+            "combined_prominence": 142.3585763998285
+          },
+          "10": {
+            "individual_scores": {
+              "headline_presence": 0.015779092702169626,
+              "avg_article_length": 428.4166666666667,
+              "early_mention_rate": 0.9090909090909091
+            },
+            "combined_prominence": 143.11384555615328
+          },
+          "4": {
+            "individual_scores": {
+              "headline_presence": 0.0032275416890801506,
+              "avg_article_length": 528.0,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 176.33440918056303
+          },
+          "13": {
+            "individual_scores": {
+              "headline_presence": 0.062399139322216246,
+              "avg_article_length": 372.41379310344826,
+              "early_mention_rate": 0.9109195402298851
+            },
+            "combined_prominence": 124.46237059433345
+          },
+          "1": {
+            "individual_scores": {
+              "headline_presence": 0.014225091148168072,
+              "avg_article_length": 332.14285714285717,
+              "early_mention_rate": 0.7016806722689075
+            },
+            "combined_prominence": 110.95292096875808
+          },
+          "5": {
+            "individual_scores": {
+              "headline_presence": 0.023967485505947045,
+              "avg_article_length": 349.71571072319205,
+              "early_mention_rate": 0.9326683291770573
+            },
+            "combined_prominence": 116.89078217929166
+          },
+          "14": {
+            "individual_scores": {
+              "headline_presence": 0.0005976929053852131,
+              "avg_article_length": 286.8,
+              "early_mention_rate": 0.9
+            },
+            "combined_prominence": 95.90019923096845
+          }
+        },
+        "Daily Times": {
+          "8": {
+            "individual_scores": {
+              "headline_presence": 0.04794070738343184,
+              "avg_article_length": 411.9755381604697,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 137.67449295595102
+          },
+          "2": {
+            "individual_scores": {
+              "headline_presence": 0.056384276198517685,
+              "avg_article_length": 375.86688851913476,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 125.64109093177775
+          },
+          "5": {
+            "individual_scores": {
+              "headline_presence": 0.14114832535885166,
+              "avg_article_length": 427.411432369558,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 142.85086023163896
+          },
+          "11": {
+            "individual_scores": {
+              "headline_presence": 0.1370203583825875,
+              "avg_article_length": 389.55255049640533,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 130.22985695159596
+          },
+          "3": {
+            "individual_scores": {
+              "headline_presence": 0.05333520968195891,
+              "avg_article_length": 408.88742304309585,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 136.6469194175926
+          },
+          "0": {
+            "individual_scores": {
+              "headline_presence": 0.12060230790880945,
+              "avg_article_length": 594.0128354725788,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 198.37781259349586
+          },
+          "13": {
+            "individual_scores": {
+              "headline_presence": 0.04634581105169341,
+              "avg_article_length": 518.7398785425102,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 173.2620747845206
+          },
+          "18": {
+            "individual_scores": {
+              "headline_presence": 0.05066141289051506,
+              "avg_article_length": 447.77314814814815,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 149.60793652034621
+          },
+          "15": {
+            "individual_scores": {
+              "headline_presence": 0.0285204991087344,
+              "avg_article_length": 443.1578947368421,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 148.0621384119836
+          },
+          "16": {
+            "individual_scores": {
+              "headline_presence": 0.02969321699971855,
+              "avg_article_length": 493.042654028436,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 164.69078241514524
+          },
+          "17": {
+            "individual_scores": {
+              "headline_presence": 0.15240641711229946,
+              "avg_article_length": 354.0557094490612,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 118.4027052887245
+          },
+          "19": {
+            "individual_scores": {
+              "headline_presence": 0.07983863401820059,
+              "avg_article_length": 366.0558166862515,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 122.37855177342323
+          },
+          "10": {
+            "individual_scores": {
+              "headline_presence": 0.01383807111361291,
+              "avg_article_length": 367.1525423728813,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 122.72212681466499
+          },
+          "6": {
+            "individual_scores": {
+              "headline_presence": 0.0050661412890515055,
+              "avg_article_length": 349.0462962962963,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 116.68378747919512
+          },
+          "9": {
+            "individual_scores": {
+              "headline_presence": 0.02054601745004222,
+              "avg_article_length": 275.57990867579906,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 92.20015156441637
+          },
+          "4": {
+            "individual_scores": {
+              "headline_presence": 0.006145041748756919,
+              "avg_article_length": 410.9389312977099,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 137.31502544648623
+          },
+          "7": {
+            "individual_scores": {
+              "headline_presence": 0.0034712449573130687,
+              "avg_article_length": 589.4324324324324,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 196.81196789246323
+          },
+          "1": {
+            "individual_scores": {
+              "headline_presence": 0.0053475935828877,
+              "avg_article_length": 358.1140350877193,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 119.70646089376739
+          },
+          "12": {
+            "individual_scores": {
+              "headline_presence": 0.00037526972511492634,
+              "avg_article_length": 182.125,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 61.04179175657504
+          },
+          "14": {
+            "individual_scores": {
+              "headline_presence": 0.0013134440379022423,
+              "avg_article_length": 276.5357142857143,
+              "early_mention_rate": 1.0
+            },
+            "combined_prominence": 92.51234257658406
+          }
+        }
+      }
+    }
+  },
+  "comparative_metrics": {
+    "LexicalDiversityCalculator": {
+      "Business Recorder": {
+        "ttr": 0.025981357053265923,
+        "mtld": 79662621.0,
+        "unique_per_100": 2.5981357053265923
+      },
+      "Dawn": {
+        "ttr": 0.033946473098539647,
+        "mtld": 20545669.0,
+        "unique_per_100": 3.3946473098539647
+      },
+      "Pakistan Today": {
+        "ttr": 0.037070540313485445,
+        "mtld": 6652749.0,
+        "unique_per_100": 3.7070540313485445
+      },
+      "Daily Times": {
+        "ttr": 0.04356294511631976,
+        "mtld": 9054094.0,
+        "unique_per_100": 4.356294511631976
+      }
+    },
+    "FramingDivergenceCalculator": {},
+    "ObjectivityCalculator": {
+      "Business Recorder": {
+        "hedge_word_density": 0.001955404843820893,
+        "overall_objectivity": 0.5
+      },
+      "Dawn": {
+        "hedge_word_density": 0.0019100011264414636,
+        "overall_objectivity": 0.5
+      },
+      "Pakistan Today": {
+        "hedge_word_density": 0.0016112892040245053,
+        "overall_objectivity": 0.5
+      },
+      "Daily Times": {
+        "hedge_word_density": 0.002095130415402103,
+        "overall_objectivity": 0.5
+      }
+    }
+  }
+}

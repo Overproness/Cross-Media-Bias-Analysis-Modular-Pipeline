@@ -1,0 +1,32 @@
+================================================================================
+DiffOutlet Pipeline Summary Report
+================================================================================
+
+Dataset Statistics:
+----------------------------------------
+Total Articles: 294407
+Number of Sources: 4
+Date Range: 2020-01-01 00:00:00 to 2023-07-15 00:00:00
+Source Distribution:
+  - Business Recorder: 216960
+  - Dawn: 39398
+  - Daily Times: 21318
+  - Pakistan Today: 16731
+
+Event Detection:
+----------------------------------------
+Method: semantic_clustering
+Number of Clusters: 20
+
+Comparative Metrics:
+----------------------------------------
+
+BiasScoreCalculator:
+{'Business Recorder': {'overall_bias': 0.3583565973919249, 'component_scores': {'sentiment': 0.25864837481563424, 'framing': 0.2372431186641778, 'lexical': 0.8}}, 'Dawn': {'overall_bias': 0.21383157447418394, 'component_scores': {'sentiment': 0.09425982283364637, 'framing': 0.08198578001848023, 'lexical': 0.7166666666666666}}, 'Pakistan Today': {'overall_bias': 0.39831210687543345, 'component_scores': {'sentiment': 0.3897482637021099, 'framing': 0.23103200348647368, 'lexical': 0.75}}, 'Daily Tim
+
+LexicalDiversityCalculator:
+{'Business Recorder': {'ttr': 0.025981357053265923, 'mtld': 79662621.0, 'unique_per_100': 2.5981357053265923}, 'Dawn': {'ttr': 0.033946473098539647, 'mtld': 20545669.0, 'unique_per_100': 3.3946473098539647}, 'Pakistan Today': {'ttr': 0.037070540313485445, 'mtld': 6652749.0, 'unique_per_100': 3.7070540313485445}, 'Daily Times': {'ttr': 0.04356294511631976, 'mtld': 9054094.0, 'unique_per_100': 4.356294511631976}}
+
+================================================================================
+End of Report
+================================================================================

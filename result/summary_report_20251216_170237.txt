@@ -1,0 +1,38 @@
+================================================================================
+DiffOutlet Pipeline Summary Report
+================================================================================
+
+Dataset Statistics:
+----------------------------------------
+Total Articles: 294407
+Number of Sources: 4
+Date Range: 2020-01-01 00:00:00 to 2023-07-15 00:00:00
+Source Distribution:
+  - Business Recorder: 216960
+  - Dawn: 39398
+  - Daily Times: 21318
+  - Pakistan Today: 16731
+
+Event Detection:
+----------------------------------------
+Method: nmf
+Number of Clusters: 20
+
+Comparative Metrics:
+----------------------------------------
+
+BiasScoreCalculator:
+{'Business Recorder': {'overall_bias': 0.6666666666666667, 'component_scores': {'lexical': 0.6666666666666667}}, 'Dawn': {'overall_bias': 0.6166666666666667, 'component_scores': {'lexical': 0.6166666666666667}}, 'Pakistan Today': {'overall_bias': 0.6666666666666667, 'component_scores': {'lexical': 0.6666666666666667}}, 'Daily Times': {'overall_bias': 0.6499999999999999, 'component_scores': {'lexical': 0.6499999999999999}}}
+
+LexicalDiversityCalculator:
+{'Business Recorder': {'ttr': 0.025981357053265923, 'mtld': 79662621.0, 'unique_per_100': 2.5981357053265923}, 'Dawn': {'ttr': 0.033946473098539647, 'mtld': 20545669.0, 'unique_per_100': 3.3946473098539647}, 'Pakistan Today': {'ttr': 0.037070540313485445, 'mtld': 6652749.0, 'unique_per_100': 3.7070540313485445}, 'Daily Times': {'ttr': 0.04356294511631976, 'mtld': 9054094.0, 'unique_per_100': 4.356294511631976}}
+
+FramingDivergenceCalculator:
+{}
+
+ObjectivityCalculator:
+{'Business Recorder': {'hedge_word_density': 0.001955404843820893, 'overall_objectivity': 0.5}, 'Dawn': {'hedge_word_density': 0.0019100011264414636, 'overall_objectivity': 0.5}, 'Pakistan Today': {'hedge_word_density': 0.0016112892040245053, 'overall_objectivity': 0.5}, 'Daily Times': {'hedge_word_density': 0.002095130415402103, 'overall_objectivity': 0.5}}
+
+================================================================================
+End of Report
+================================================================================

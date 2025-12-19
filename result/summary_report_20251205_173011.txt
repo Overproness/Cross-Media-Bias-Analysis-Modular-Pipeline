@@ -1,0 +1,35 @@
+================================================================================
+DiffOutlet Pipeline Summary Report
+================================================================================
+
+Dataset Statistics:
+----------------------------------------
+Total Articles: 294044
+Number of Sources: 4
+Date Range: 2020-01-01 00:00:00 to 2023-07-15 00:00:00
+Source Distribution:
+  - Business Recorder: 216597
+  - Dawn: 39398
+  - Daily Times: 21317
+  - Pakistan Today: 16732
+
+Event Detection:
+----------------------------------------
+Method: temporal_semantic
+Number of Clusters: 35
+
+Comparative Metrics:
+----------------------------------------
+
+BiasScoreCalculator:
+{'Business Recorder': {'overall_bias': 0.34835031954488255, 'component_scores': {'sentiment': 0.2584500745624363, 'framing': 0.23715077755725067, 'lexical': 0.6499999999999999}}, 'Dawn': {'overall_bias': 0.2160921010695475, 'component_scores': {'sentiment': 0.09425982283364637, 'framing': 0.08198578001848023, 'lexical': 0.6000000000000001}}, 'Pakistan Today': {'overall_bias': 0.39528335056148445, 'component_scores': {'sentiment': 0.3897841441549128, 'framing': 0.23097145734237923, 'lexical': 0.6
+
+FramingDivergenceCalculator:
+{'divergence_matrix': {'Business Recorder': {'Business Recorder': 0.0, 'Dawn': 0.23553627423473622, 'Pakistan Today': 0.03575043011565024, 'Daily Times': 0.27088202536538}, 'Dawn': {'Business Recorder': 0.23553627423473622, 'Dawn': 0.0, 'Pakistan Today': 0.24089691438871483, 'Daily Times': 0.07015141322632992}, 'Pakistan Today': {'Business Recorder': 0.03575043011565024, 'Dawn': 0.24089691438871483, 'Pakistan Today': 0.0, 'Daily Times': 0.2770834822374751}, 'Daily Times': {'Business Recorder': 0
+
+ObjectivityCalculator:
+{'Business Recorder': {'hedge_word_density': 0.001956425060712274, 'overall_objectivity': 0.5}, 'Dawn': {'hedge_word_density': 0.0019100011264414631, 'overall_objectivity': 0.5}, 'Pakistan Today': {'hedge_word_density': 0.0016111929041677023, 'overall_objectivity': 0.5}, 'Daily Times': {'hedge_word_density': 0.00209507834438884, 'overall_objectivity': 0.5}}
+
+================================================================================
+End of Report
+================================================================================
